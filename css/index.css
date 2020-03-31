@@ -198,6 +198,11 @@ img {
     padding: 15px;
   }
 }
+@media screen and (max-width: 830px) {
+  body {
+    padding: 25px;
+  }
+}
 nav {
   border-bottom: 2px dashed #C0C0C0;
 }
@@ -222,7 +227,7 @@ nav .nav-container {
   }
 }
 nav .nav-container .logo {
-  width: 40%;
+  width: 30%;
 }
 @media (max-width: 500px) {
   nav .nav-container .logo {
@@ -234,9 +239,10 @@ nav .nav-container .logo a {
   text-decoration: none;
 }
 nav .nav-container .nav-links {
-  width: 60%;
+  width: 70%;
   display: flex;
   justify-content: flex-end;
+  font-size: 1.5rem;
 }
 @media (max-width: 500px) {
   nav .nav-container .nav-links {
@@ -245,7 +251,7 @@ nav .nav-container .nav-links {
   }
 }
 nav .nav-container .nav-links a {
-  margin: 0px 25px;
+  margin: 0px 15px;
   text-decoration: none;
 }
 .footer {
@@ -272,6 +278,13 @@ nav .nav-container .nav-links a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 700px) {
+  .home .content-section {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media (max-width: 500px) {
   .home .content-section {
     border-top: 2px dashed #C0C0C0;
@@ -283,15 +296,25 @@ nav .nav-container .nav-links a {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 700px) {
+  .home .content-section .text-content {
+    width: 80%;
+    padding-top: 30px;
+  }
+}
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 100%;
-    padding-top: 30px;
   }
 }
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 700px) {
+  .home .content-section .img-content {
+    width: 80%;
+  }
 }
 @media (max-width: 500px) {
   .home .content-section .img-content {
@@ -304,6 +327,11 @@ nav .nav-container .nav-links a {
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 700px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
 }
 @media (max-width: 500px) {
   .home .inverse-content {
@@ -389,6 +417,16 @@ nav .nav-container .nav-links a {
   border-radius: 5px;
   padding: 25px;
   background-color: grey;
+}
+@media (max-width: 700px) {
+  .home .sign-up-container form {
+    width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .home .sign-up-container form {
+    width: 275px;
+  }
 }
 .home .sign-up-container form input,
 .home .sign-up-container form textarea {
