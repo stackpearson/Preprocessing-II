@@ -370,3 +370,51 @@ nav .nav-container .nav-links a {
     width: 90%;
   }
 }
+.home #fun_in_the_sunForm,
+.home #mountain_excursionForm,
+.home #island_getawayForm {
+  display: none;
+}
+.home .sign-up-container {
+  padding: 25px 0px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.home .sign-up-container form {
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding: 25px;
+  background-color: grey;
+}
+.home .sign-up-container form input,
+.home .sign-up-container form textarea {
+  margin: 5px;
+}
+.home .sign-up-container form .button-interface {
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.home .sign-up-container form .button-interface .form-button {
+  background-color: #008080;
+  margin: 0px 4rem 0px 0px;
+  height: 4rem;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  font-size: 20px;
+  padding: 0px 15px;
+}
+.home .sign-up-container form .button-interface .form-button:hover {
+  background-color: yellow;
+  color: black;
+}
+.home .sign-up-container form .button-interface .form-button:active {
+  transform: translateY(-5px);
+  font-size: 3rem;
+}
