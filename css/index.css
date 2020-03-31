@@ -195,8 +195,21 @@ nav .nav-container {
   align-items: center;
   padding: 40px 5px;
 }
+@media (max-width: 500px) {
+  nav .nav-container {
+    max-width: 500px;
+    flex-direction: column;
+    padding: 15px 5px;
+  }
+}
 nav .nav-container .logo {
   width: 40%;
+}
+@media (max-width: 500px) {
+  nav .nav-container .logo {
+    padding-bottom: 10px;
+    text-align: center;
+  }
 }
 nav .nav-container .logo a {
   text-decoration: none;
@@ -205,6 +218,12 @@ nav .nav-container .nav-links {
   width: 60%;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  nav .nav-container .nav-links {
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 nav .nav-container .nav-links a {
   margin: 0px 25px;

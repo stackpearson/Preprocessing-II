@@ -10,18 +10,36 @@ nav{
         align-items: center;
         padding: 40px 5px;
         
+        @media @mobile{
+            max-width: 500px;
+            flex-direction: column;
+            padding: 15px 5px;
+
+        }
+        
+        
     
         .logo{
             width: 40%;
+            @media @mobile{
+                padding-bottom: 10px;
+                text-align: center;
+            }
             a{
                 text-decoration: none;
             }
+            
         }
         
         .nav-links{
             width:60%;
             display:flex;
             justify-content: flex-end;
+
+            @media @mobile{
+                justify-content: space-between;
+                width: 100%;
+            }
             
             a{
                 margin: 0px 25px;
