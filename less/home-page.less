@@ -1,12 +1,23 @@
 .bus-banner{
   max-width:800px;
   margin: 0 auto;
+  
   h2{
-    padding-top: 20px;
+    padding: 20px 10px 0px 10px;
+  }
+
+  p{
+    padding: 0px 10px 0px 10px;
   }
 }
 
 .home {
+  margin: 0 auto;
+  padding: 10px;
+  
+  @media @mobile{
+    
+  }
 
   .content-section {
     margin: 30px 0;
@@ -41,6 +52,7 @@
         width: 100%;
         
       }
+
     }
 
     .img-content {
@@ -64,7 +76,7 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
-    
+
     @media @tablet{
       flex-direction: column-reverse;
     }
@@ -92,10 +104,73 @@
       width: 100%;
     }
 
+
     img {
       border-radius: 10px;
     }
   }
+
+  //------------------- Form CSS ---------------------//
+
+  #fun_in_the_sunForm, #mountain_excursionForm, #island_getawayForm{
+    display:none;
+  }
+
+  .sign-up-container{
+    padding: 25px 0px;
+    position: relative;
+    display:flex;
+    justify-content: center;
+
+    form{
+      width: 450px;
+      display:flex;
+      flex-direction: column;
+      border: 2px solid grey;
+      border-radius: 5px;
+      padding: 25px;
+      background-color: grey;
+      margin: 0 auto;
+
+      @media @tablet{
+        width: 350px; 
+      }
+
+      @media @mobile{
+        width: 320px;
+        padding: 5px;
+      }
+
+      h3{
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+        color:black;
+        padding-bottom: 10px;
+      }
+
+      input, textarea{
+        margin: 5px;
+      }
+      .button-interface{
+        padding-top: 15px;
+        display:flex;
+        justify-content: space-evenly;
+
+        .button{
+          .buttonMixin(#008080, 10px);
+        }
+        .button:hover{
+          .hover();
+        }
+        .button:active{
+          .active();
+        }
+      }
+    }
+  }
+
+  //------------------- Form CSS ---------------------//
 
   .content-pick {
     padding-top: 30px;
@@ -112,69 +187,24 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      .btn{
-        .buttons();
+
+      @media @mobile{
+        width: 80%;
       }
-      .btn:hover{
+
+      .button{
+        .buttonMixin(#008080, 10px);
+      }
+
+      .button:hover{
         .hover();
       }
-      .btn:active{
+
+      .button:active{
         .active();
       }
 
-      @media @mobile{
-        width: 90%;
-      }
     }
-  }
-
-  #fun_in_the_sunForm, #mountain_excursionForm, #island_getawayForm{
-    display:none;
-  }
-
-  .sign-up-container{
-    padding: 25px 0px;
-    position: relative;
-    display:flex;
-    justify-content: center;
-
-
-    form{
-      width: 450px;
-      display:flex;
-      flex-direction: column;
-      border: 2px solid grey;
-      border-radius: 5px;
-      padding: 25px;
-      background-color: grey;
-
-      @media @tablet{
-        width: 350px; 
-      }
-
-      @media @mobile{
-        width: 275px; 
-      }
-
-      input, textarea{
-        margin: 5px;
-      }
-      .button-interface{
-        padding-top: 15px;
-        display:flex;
-        justify-content: space-evenly;
-
-        .form-button{
-          .buttons();
-          padding: 0px 15px;
-        }
-        .form-button:hover{
-          .hover();
-        }
-        .form-button:active{
-          .active();
-        }
-      }
-    }
+    
   }
 }// home
